@@ -59,7 +59,7 @@ pipeline {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'github-cre', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
                         git branch: 'main', 
-                            url: "https://${USERNAME}:${PASSWORD}@github.com/amanravi-squareops/order-service.git"
+                            url: "https://${USERNAME}:${PASSWORD}@github.com/amanravi-squareops/springboot-helm.git"
                     }
                     sh '''
                     cd order-service
